@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main>
+        <div class="container board-container">
+            <table class="score-board disabled">
+                <tr>
+                    <th>Winner</th>
+                    <th>Turns</th>
+                </tr>
+            </table>
+            <div class="winner"></div>
+            <div class="board">
+                
+            </div>
+            <div class="buttons">
+                <button class="reset">Reset</button>
+                <button class="score">Score</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <p>2022</p>
+            <a href="https://github.com/RichardPickman" target="_blank">
+                <svg class="icon-github">
+                    <use xlink:href="assets/svg/sprite.svg#github"></use>
+                </svg>
+            </a>
+            <div class="logo-rss">
+                <a href="https://rs.school/js-stage0/" class="rss" target="_blank">
+                    <svg class="icon-rss">
+                        <use xlink:href="assets/svg/sprite.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
