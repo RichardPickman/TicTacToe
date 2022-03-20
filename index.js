@@ -14,7 +14,7 @@ window.onload = function () {
 
             winner.innerText = player[0]
             turns.innerText = player[1]
-            
+
             row.append(winner, turns)
             scoreBoard.append(row)
         }
@@ -64,7 +64,7 @@ window.onload = function () {
             xTurn = true
         }
     }
-    
+
     const setWinner = (player) => {
         const winnerLine = document.createElement('p')
         winnerLine.innerText = `'${player.toUpperCase()}' won! It took ${turnsCount} steps to win!`
@@ -73,7 +73,7 @@ window.onload = function () {
         localStorage.setItem(localStorage.length, player + `${turnsCount}`)
         insertWinnerToScoreList()
     }
-    
+
     const checkWin = (player) => {
         return winningCombinations.some((combination) => {
             return combination.every((i) => {
